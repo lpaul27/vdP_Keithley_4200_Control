@@ -12,7 +12,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Close_Keithley_4200.vi" Type="VI" URL="../Close_Keithley_4200.vi"/>
 		<Item Name="Init_Keithley_4200.vi" Type="VI" URL="../Init_Keithley_4200.vi"/>
+		<Item Name="Main_Test.vi" Type="VI" URL="../Main_Test.vi"/>
+		<Item Name="vdP_measurement.vi" Type="VI" URL="../vdP_measurement.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
