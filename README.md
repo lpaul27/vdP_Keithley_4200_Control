@@ -46,7 +46,7 @@ The 8x4 array is setup in form:
 | Symptom | Cause | Fix |
 |---|---|---|
 | `-1073807346` at VISA Open | empty resource field or stale session | set the full `::SOCKET` string; restart LabVIEW to clear stale sessions; don't use Abort |
-| Read returns `ACK` instead of a number | unread ACK clogging the buffer | pair every Write with a Read (see protocol rules) |
+| Read returns `ACK` instead of a number | unread ACK clogging the buffer | pair every Write with a Read|
 | Read hangs / VI must be aborted | command not NULL-terminated | confirm `\00` shows in `'\' Codes Display` |
 | Reading begins with `C` during a real measurement | compliance reached (invalid reading) | lower current or raise voltage compliance |
 | A configuration behaves like the previous one | KXCI short-command carryover | one-read-per-write drains the buffer each command; if it persists, pad commands to equal length or add a VISA Clear |
