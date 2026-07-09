@@ -1,10 +1,20 @@
 ``` mermaid 
 flowchart TB
-A[Run ALD] --> B(Precursor deposition)
-B --> C(Nitrogen Purge)
-C --> F[Run Resistivity test]
-F --> G[Run vdP]
-G --> H(Log values)
-H --> I(Use Newton's method to solve vdP equation)
-I --> J{log Resistivity}
-J --> B
+A(Run ALD Process)
+B[Deposit Precursor A]
+C[Nitrogen Purge]
+D[Van der Pauw measurement]
+E[Deposit Precursor B]
+F[Nitrogen Purge]
+G[Van der Pauw Measurement]
+
+A --> B
+B --> C
+C --> D
+D--> E
+E--> F
+F --> G
+G --> B
+
+
+
